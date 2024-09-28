@@ -22,6 +22,9 @@ public class UserPhone {
     @GeneratedValue(strategy = GenerationType.UUID)
     private UUID Id;
 
+    @NotBlank
+    private String name;
+
     @Email
     @NotBlank
     private String email;
